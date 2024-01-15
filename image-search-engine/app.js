@@ -15,12 +15,16 @@ async function searchImage() {
   const results = data.results;
   results.map((result) => {
     const image = document.createElement("img");
-    image.src = result.urls.small;
+    image.src = result.urls.full;
+
     const imageLink = document.createElement("a");
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
     imageLink.appendChild(image);
     searchResults.appendChild(imageLink);
+    const title = document.createElement("p");
+    title.innerText = result.description;
+    searchResults.appendChild(title);
   });
   showMorebtn.style.display = "block";
 }
