@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: #fdfbfb;
+}
+.card{
+    max-width: 400px;
+    margin:0 auto;
+    text-align: center;
+    background-color: rgb(113, 161, 233);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 105px;
+    min-height: 500px;
+}
+h1, h2, h3{
+    color: white;
+    font-weight: bold;
+}
+.card input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+}
+button{
+    background-color: #0c9c0a;
+    color: #fdf7f7;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    
+}
+.weather-info {
+    margin-top: 20px;
+}
+.weatherSearch{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin: 10px;
+}
